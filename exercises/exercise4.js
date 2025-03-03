@@ -17,11 +17,12 @@ const dogs = [
 ];
 
 // Use forEach to print out the name of each dog to the console
-
+dogs.forEach((dog) => {console.log(dog.name)});
 
 // Use filter AND map to create a new array that contains the names of
 // the dogs that are 'Kind'.
-const kindDogs = null;
+const kindDogsObjects = dogs.filter((dog) => dog.temperament.includes('Kind'));
+const kindDogs = kindDogsObjects.map((d) => d.name)
 console.log(kindDogs); 
 // -> array of kind dog objects
 

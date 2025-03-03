@@ -6,6 +6,13 @@ TODO: Create two arrow functions.
    return their product
 */
 
+const helloWorld = () => {
+  console.log("Hello World!");
+}
+
+const mult3 = (a, b, c) => {
+  return a*b*c;
+}
 
 // Run the file and use this to check your work
 console.log("helloWorld():", helloWorld());
